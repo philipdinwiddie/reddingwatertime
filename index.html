@@ -93,16 +93,12 @@
                                 &&$scope.CurrentTimeDay=="Fri"
                                     :$scope.WaterUntilDay="today";break;
                             case $scope.StreetNumber%2==1
-                                &&$scope.CurrentTimeDay=="Fri"
-                                &&$scope.CurrentTimeHour<7
-                                    :$scope.WaterUntilDay="today";break;
-                            case $scope.StreetNumber%2==1
                                 &&$scope.CurrentTimeDay=="Sat"
-                                    :$scope.WaterUntilDay="on Sunday";break;
+                                    :$scope.WaterUntilDay="tomorrow";break;
                             case $scope.StreetNumber%2==1
                                 &&$scope.CurrentTimeDay=="Sun"
                                 &&$scope.CurrentTimeHour>=21
-                                    :$scope.WaterUntilDay="tomorrow";break;
+                                    :$scope.WaterUntilDay="on tuesday";break;
                             case $scope.StreetNumber%2==1
                                 &&$scope.CurrentTimeDay=="Sun"
                                     :$scope.WaterUntilDay="today";break;
