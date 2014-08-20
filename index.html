@@ -76,13 +76,6 @@
                                 &&$scope.CurrentTimeHour>=21
                                     :$scope.WaterUntilDay="tomorrow";break;
                             case $scope.StreetNumber%2==1
-                                &&$scope.CurrentTimeDay=="Wed"
-                                    :$scope.WaterUntilDay="today";break;
-                            case $scope.StreetNumber%2==1
-                                &&$scope.CurrentTimeDay=="Wed"
-                                &&$scope.CurrentTimeHour<7
-                                    :$scope.WaterUntilDay="today";break;
-                            case $scope.StreetNumber%2==1
                                 &&$scope.CurrentTimeDay=="Thu"
                                     :$scope.WaterUntilDay="tomorrow";break;
                             case $scope.StreetNumber%2==1
